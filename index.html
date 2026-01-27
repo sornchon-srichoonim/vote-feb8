@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How Old Are You?</title>
+    <style>
+        body { font-family: sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; background: #f0f2f5; }
+        .container { background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); text-align: center; }
+        input { padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px; width: 100%; box-sizing: border-box;}
+        button { padding: 10px 20px; background-color: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer; width: 100%; }
+        button:hover { background-color: #0056b3; }
+        #result { margin-top: 20px; font-weight: bold; font-size: 1.2rem; color: #333; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Age Calculator</h1>
+        <p>Enter your birth year below:</p>
+        
+        <input type="number" id="birthYear" placeholder="e.g., 2004">
+        
+        <button onclick="calculateAge()">Check Age</button>
+        
+        <div id="result"></div>
+    </div>
+
+    <script>
+        function calculateAge() {
+            // 1. Get the value from the input box
+            const yearInput = document.getElementById('birthYear').value;
+            
+            // 2. Get the current year automatically
+            const currentYear = new Date().getFullYear();
+            
+            // 3. The Math
+            const age = currentYear - yearInput;
+
+            // 4. Show the result (Logic check: is it a real number?)
+            if (yearInput > 1900 && yearInput <= currentYear) {
+                document.getElementById('result').innerText = "You are roughly " + age + " years old.";
+            } else {
+                document.getElementById('result').innerText = "Please enter a valid year.";
+            }
+        }
+    </script>
+</body>
+</html>
