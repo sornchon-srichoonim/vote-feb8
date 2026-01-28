@@ -1,49 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>How Old Are You?</title>
-    <style>
-        body { font-family: sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; background: #f0f2f5; }
-        .container { background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); text-align: center; }
-        input { padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px; width: 100%; box-sizing: border-box;}
-        button { padding: 10px 20px; background-color: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer; width: 100%; }
-        button:hover { background-color: #0056b3; }
-        #result { margin-top: 20px; font-weight: bold; font-size: 1.2rem; color: #333; }
-    </style>
+    <title>Vote 69 - หน้าหลัก</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">
 
-    <div class="container">
-        <h1>Age Calculator</h1>
-        <p>Enter your birth year below:</p>
-        
-        <input type="number" id="birthYear" placeholder="e.g., 2004">
-        
-        <button onclick="calculateAge()">Check Age</button>
-        
-        <div id="result"></div>
-    </div>
-
-    <script>
-        function calculateAge() {
-            // 1. Get the value from the input box
-            const yearInput = document.getElementById('birthYear').value;
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-4xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-vote-primary tracking-tighter">Vote 69</a>
             
-            // 2. Get the current year automatically
-            const currentYear = new Date().getFullYear();
-            
-            // 3. The Math
-            const age = currentYear - yearInput;
+            <div class="space-x-4">
+                <a href="guide.html" class="text-gray-600 hover:text-vote-primary font-medium transition">
+                    คู่มือเลือกตั้ง (How-to)
+                </a>
+            </div>
+        </div>
+    </nav>
 
-            // 4. Show the result (Logic check: is it a real number?)
-            if (yearInput > 1900 && yearInput <= currentYear) {
-                document.getElementById('result').innerText = "You are roughly " + age + " years old.";
-            } else {
-                document.getElementById('result').innerText = "Please enter a valid year.";
-            }
-        }
-    </script>
+    <header class="flex-grow flex flex-col justify-center items-center text-center px-4 py-20 bg-gradient-to-b from-blue-50 to-white">
+        <h1 class="text-4xl md:text-6xl font-bold text-vote-primary mb-6">
+            8 กุมภาฯ<br/>
+            <span class="text-vote-accent">ไปเลือกตั้งกัน!</span>
+        </h1>
+        <p class="text-lg md:text-xl text-gray-600 mb-8 max-w-lg mx-auto">
+            การเลือกตั้งครั้งนี้ซับซ้อนกว่าที่คิด? <br>
+            อ่านสรุปวิธีเลือกตั้ง การกาบัตร และความสำคัญของประชามติได้ที่นี่
+        </p>
+        
+        <div class="flex flex-col md:flex-row gap-4">
+            <a href="guide.html" class="bg-vote-primary text-white text-lg font-bold py-3 px-8 rounded-full shadow-lg hover:bg-blue-800 hover:shadow-xl transition transform hover:-translate-y-1">
+                อ่านคู่มือเลือกตั้ง 📖
+            </a>
+            
+            <a href="https://stat.bora.dopa.go.th/Election/enqelectloc/" target="_blank" class="bg-white text-vote-primary border-2 border-vote-primary text-lg font-bold py-3 px-8 rounded-full hover:bg-blue-50 transition">
+                ตรวจสอบสิทธิ
+            </a>
+        </div>
+    </header>
+
+    <footer class="bg-gray-100 py-8 text-center text-gray-500 text-sm">
+        <p>© 2026 Vote 69 Project. Created for Educational Purposes.</p>
+    </footer>
+
 </body>
 </html>

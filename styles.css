@@ -1,0 +1,15 @@
+/* styles.css */
+
+/* Custom classes that Tailwind doesn't have by default */
+.card-hover {
+    transition: transform 0.2s ease-in-out;
+}
+
+.card-hover:hover {
+    transform: translateY(-5px);
+}
+
+/* You can also add global font settings here if you aren't using Tailwind for everything */
+body {
+    font-family: 'Kanit', sans-serif;
+}
