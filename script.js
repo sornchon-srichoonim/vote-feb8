@@ -24,6 +24,7 @@ console.log("Vote 69 project loaded successfully.");
 const translations = {
     th: {
         nav_guide: "คู่มือเลือกตั้ง (How-to)",
+        nav_candidates: "รายชื่อผู้สมัคร ส.ส.",
         hero_date: "8 กุมภาฯ",
         hero_action: "ไปเลือกตั้งกัน!",
         hero_desc: "การเลือกตั้งครั้งนี้ซับซ้อนกว่าที่คิด? <br>อ่านสรุปวิธีเลือกตั้ง การกาบัตร และความสำคัญของประชามติได้ที่นี่",
@@ -65,6 +66,7 @@ const translations = {
     },
     en: {
         nav_guide: "Election Guide (How-to)",
+        nav_candidates: "Candidate List",
         hero_date: "Feb 8th",
         hero_action: "Let's Vote!",
         hero_desc: "Is this election more complex than you think? <br>Read the summary on how to vote and the referendum here.",
