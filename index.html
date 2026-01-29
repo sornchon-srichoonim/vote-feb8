@@ -38,14 +38,19 @@
             อ่านสรุปวิธีเลือกตั้ง การกาบัตร และความสำคัญของประชามติได้ที่นี่
         </p>
         
-        <div class="flex flex-col md:flex-row gap-4">
+        <div class="flex flex-col md:flex-row gap-4 items-center">
             <a href="guide.html" class="bg-vote-primary text-white text-lg font-bold py-3 px-8 rounded-full shadow-lg hover:bg-blue-800 hover:shadow-xl transition transform hover:-translate-y-1" data-i18n="btn_read">
                 อ่านคู่มือเลือกตั้ง 📖
             </a>
             
-            <a href="https://boraservices.bora.dopa.go.th/election/enqelection/" target="_blank" class="bg-white text-vote-primary border-2 border-vote-primary text-lg font-bold py-3 px-8 rounded-full hover:bg-blue-50 transition" data-i18n="btn_check">
-                ตรวจสอบสิทธิ
-            </a>
+            <div class="flex flex-col sm:flex-row gap-3">
+                <a href="https://boraservices.bora.dopa.go.th/election/enqelection/" target="_blank" class="bg-white text-vote-primary border-2 border-vote-primary text-lg font-bold py-3 px-6 rounded-full hover:bg-blue-50 transition text-center" data-i18n="btn_check_elec">
+                    เช็กสิทธิเลือกตั้ง 🗳️
+                </a>
+                <a href="https://boraservices.bora.dopa.go.th/election/enqelectionpm/" target="_blank" class="bg-white text-yellow-600 border-2 border-yellow-400 text-lg font-bold py-3 px-6 rounded-full hover:bg-yellow-50 transition text-center" data-i18n="btn_check_ref">
+                    เช็กสิทธิประชามติ 📋
+                </a>
+            </div>
         </div>
     </header>
 
