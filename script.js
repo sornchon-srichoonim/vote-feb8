@@ -37,7 +37,19 @@ const translations = {
         votenolist_title: "Vote No vs No Vote ต่างกันยังไง?",
         vocab_title: "คลังศัพท์การเมือง (Political Vocab)",
         footer_reminder: "8 กุมภาพันธ์นี้ อย่าลืมไปใช้สิทธิ!",
-        footer_btn_check: "ตรวจสอบสิทธิเลือกตั้ง"
+        footer_btn_check: "ตรวจสอบสิทธิเลือกตั้ง",
+        // New Tabs & Content
+        tab_big3: "3 พรรคใหญ่",
+        tab_const: "รธน. 60",
+        tab_calc: "สูตรคำนวณ",
+        tab_voteno: "Vote No",
+        tab_vocab: "ศัพท์ควรรู้",
+        poles_title: "ส่อง 3 พรรคใหญ่ (The Big 3)",
+        pole_pt_desc: "เน้นนโยบายเศรษฐกิจ ปากท้อง (Conservative/Strategic)",
+        pole_pp_desc: "เน้นแก้โครงสร้าง ปฏิรูปกองทัพ (Liberal/Progressive)",
+        pole_bjt_desc: "เน้นดูแลพื้นที่ เครือข่ายบ้านใหญ่ (Big House)",
+        calc_title: "สูตรคำนวณ ส.ส. บัญชีรายชื่อ",
+        calc_desc: "เอาคะแนนพรรคทั้งประเทศรวมกัน หารด้วย 100 = คะแนนต่อ ส.ส. 1 คน"
     },
     en: {
         nav_guide: "Election Guide (How-to)",
@@ -55,7 +67,19 @@ const translations = {
         votenolist_title: "Vote No vs No Vote: What's the difference?",
         vocab_title: "Political Vocab",
         footer_reminder: "Don't forget to vote on Feb 8th!",
-        footer_btn_check: "Check Election Rights"
+        footer_btn_check: "Check Election Rights",
+        // New Tabs & Content
+        tab_big3: "The Big 3",
+        tab_const: "Const. 60",
+        tab_calc: "Calculation",
+        tab_voteno: "Vote No",
+        tab_vocab: "Vocab",
+        poles_title: "The Big 3 Parties",
+        pole_pt_desc: "Focus on economy & livelihood (Conservative/Strategic)",
+        pole_pp_desc: "Focus on structural reform (Liberal/Progressive)",
+        pole_bjt_desc: "Focus on local areas & patronage (Big House)",
+        calc_title: "Party-List Calculation",
+        calc_desc: "Total National Votes ÷ 100 = Votes per 1 MP"
     }
 };
 

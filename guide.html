@@ -32,6 +32,17 @@
         <p class="text-lg md:text-xl opacity-90" data-i18n="guide_subtitle">คู่มือเลือกตั้งฉบับรวบรัด สำหรับคนมีเวลาน้อย</p>
     </header>
 
+    <!-- Sticky Sub-nav (Tabs) -->
+    <div class="bg-white shadow-sm sticky top-[73px] z-40 overflow-x-auto border-b">
+        <div class="max-w-4xl mx-auto px-4 flex space-x-2 md:space-x-6 py-3 whitespace-nowrap text-sm md:text-base font-medium text-gray-600">
+            <a href="#election" class="hover:text-vote-primary hover:bg-blue-50 px-3 py-1 rounded-full transition" data-i18n="tab_big3">3 พรรคใหญ่</a>
+            <a href="#referendum" class="hover:text-vote-primary hover:bg-blue-50 px-3 py-1 rounded-full transition" data-i18n="tab_const">รธน. 60</a>
+            <a href="#calculation" class="hover:text-vote-primary hover:bg-blue-50 px-3 py-1 rounded-full transition" data-i18n="tab_calc">สูตรคำนวณ</a>
+            <a href="#votenolist" class="hover:text-vote-primary hover:bg-blue-50 px-3 py-1 rounded-full transition" data-i18n="tab_voteno">Vote No</a>
+            <a href="#vocab" class="hover:text-vote-primary hover:bg-blue-50 px-3 py-1 rounded-full transition" data-i18n="tab_vocab">ศัพท์ควรรู้</a>
+        </div>
+    </div>
+
     <main class="max-w-4xl mx-auto px-4 py-8 space-y-12">
 
         <section id="referendum" class="bg-white rounded-xl shadow-lg p-6 md:p-8 border-l-8 border-vote-accent">
@@ -74,20 +85,29 @@
             </div>
 
             <div class="bg-gray-100 p-5 rounded-lg">
-                <h3 class="font-bold text-lg mb-3 text-gray-800">3 ขั้วการเมืองไทยในปัจจุบัน</h3>
+                <h3 class="font-bold text-lg mb-3 text-gray-800" data-i18n="poles_title">ส่อง 3 พรรคใหญ่ (The Big 3)</h3>
                 <div class="grid gap-4 md:grid-cols-3">
                     <div class="bg-white p-4 rounded shadow-sm card-hover">
-                        <div class="text-blue-800 font-bold mb-1">ขั้วอนุรักษ์นิยม</div>
-                        <p class="text-xs text-gray-500">เน้นรักษาโครงสร้างเดิม ฐานเสียงคือข้าราชการและกลุ่มคนรุ่นเก่า</p>
+                        <div class="text-red-600 font-bold mb-1">Pheu Thai (เพื่อไทย)</div>
+                        <p class="text-xs text-gray-500" data-i18n="pole_pt_desc">เน้นนโยบายเศรษฐกิจ ปากท้อง (Conservative/Strategic)</p>
                     </div>
                     <div class="bg-white p-4 rounded shadow-sm card-hover">
-                        <div class="text-orange-600 font-bold mb-1">ขั้วเสรีนิยม/ก้าวหน้า</div>
-                        <p class="text-xs text-gray-500">เน้นแก้โครงสร้าง ลดอำนาจรัฐรวมศูนย์ ฐานเสียงคือคนรุ่นใหม่</p>
+                        <div class="text-orange-600 font-bold mb-1">People's (ประชาชน)</div>
+                        <p class="text-xs text-gray-500" data-i18n="pole_pp_desc">เน้นแก้โครงสร้าง ปฏิรูปกองทัพ (Liberal/Progressive)</p>
                     </div>
                     <div class="bg-white p-4 rounded shadow-sm card-hover">
-                        <div class="text-purple-700 font-bold mb-1">ขั้วบ้านใหญ่</div>
-                        <p class="text-xs text-gray-500">เน้นเครือข่ายอุปถัมภ์ในพื้นที่ ดูแลปากท้อง ประนีประนอมสูง</p>
+                        <div class="text-blue-800 font-bold mb-1">Bhumjaithai (ภูมิใจไทย)</div>
+                        <p class="text-xs text-gray-500" data-i18n="pole_bjt_desc">เน้นดูแลพื้นที่ เครือข่ายบ้านใหญ่ (Big House)</p>
                     </div>
+                </div>
+            </div>
+
+            <div id="calculation" class="mt-6 border-t pt-6">
+                <h3 class="font-bold text-lg mb-2 flex items-center text-vote-primary">
+                    🧮 <span class="ml-2" data-i18n="calc_title">สูตรคำนวณ ส.ส. บัญชีรายชื่อ</span>
+                </h3>
+                <div class="bg-blue-50 border border-blue-200 p-4 rounded-lg text-center">
+                    <p class="text-lg font-bold text-blue-900" data-i18n="calc_desc">เอาคะแนนพรรคทั้งประเทศรวมกัน หารด้วย 100 = คะแนนต่อ ส.ส. 1 คน</p>
                 </div>
             </div>
         </section>
