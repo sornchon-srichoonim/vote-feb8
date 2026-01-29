@@ -74,6 +74,25 @@ function setLanguage(lang) {
         }
     });
 
+    // Update Button Styles (Visual Feedback)
+    const btnTh = document.getElementById('btn-th');
+    const btnEn = document.getElementById('btn-en');
+
+    // Helper to toggle active class
+    const updateBtnStyle = (btn, isActive) => {
+        if (!btn) return; // Safety check if button doesn't exist on page
+        if (isActive) {
+            btn.classList.remove('text-gray-400');
+            btn.classList.add('text-vote-primary', 'underline');
+        } else {
+            btn.classList.add('text-gray-400');
+            btn.classList.remove('text-vote-primary', 'underline');
+        }
+    };
+
+    updateBtnStyle(btnTh, lang === 'th');
+    updateBtnStyle(btnEn, lang === 'en');
+
     // Save preference (optional)
     localStorage.setItem('vote69_lang', lang);
 }
