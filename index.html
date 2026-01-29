@@ -16,37 +16,41 @@
         <div class="max-w-4xl mx-auto px-4 py-4 flex justify-between items-center">
             <a href="index.html" class="text-2xl font-bold text-vote-primary tracking-tighter">Vote 69</a>
             
-            <div class="space-x-4">
-                <a href="guide.html" class="text-gray-600 hover:text-vote-primary font-medium transition">
+            <div class="space-x-4 flex items-center">
+                <a href="guide.html" class="text-gray-600 hover:text-vote-primary font-medium transition" data-i18n="nav_guide">
                     คู่มือเลือกตั้ง (How-to)
                 </a>
+                <div class="border-l pl-4 ml-4 space-x-2 text-sm">
+                    <button onclick="setLanguage('th')" class="hover:text-vote-primary font-bold">TH</button>
+                    <button onclick="setLanguage('en')" class="hover:text-vote-primary font-bold">EN</button>
+                </div>
             </div>
         </div>
     </nav>
 
     <header class="flex-grow flex flex-col justify-center items-center text-center px-4 py-20 bg-gradient-to-b from-blue-50 to-white">
         <h1 class="text-4xl md:text-6xl font-bold text-vote-primary mb-6">
-            8 กุมภาฯ<br/>
-            <span class="text-vote-accent">ไปเลือกตั้งกัน!</span>
+            <span data-i18n="hero_date">8 กุมภาฯ</span><br/>
+            <span class="text-vote-accent" data-i18n="hero_action">ไปเลือกตั้งกัน!</span>
         </h1>
-        <p class="text-lg md:text-xl text-gray-600 mb-8 max-w-lg mx-auto">
+        <p class="text-lg md:text-xl text-gray-600 mb-8 max-w-lg mx-auto" data-i18n="hero_desc">
             การเลือกตั้งครั้งนี้ซับซ้อนกว่าที่คิด? <br>
             อ่านสรุปวิธีเลือกตั้ง การกาบัตร และความสำคัญของประชามติได้ที่นี่
         </p>
         
         <div class="flex flex-col md:flex-row gap-4">
-            <a href="guide.html" class="bg-vote-primary text-white text-lg font-bold py-3 px-8 rounded-full shadow-lg hover:bg-blue-800 hover:shadow-xl transition transform hover:-translate-y-1">
+            <a href="guide.html" class="bg-vote-primary text-white text-lg font-bold py-3 px-8 rounded-full shadow-lg hover:bg-blue-800 hover:shadow-xl transition transform hover:-translate-y-1" data-i18n="btn_read">
                 อ่านคู่มือเลือกตั้ง 📖
             </a>
             
-            <a href="https://boraservices.bora.dopa.go.th/election/enqelection/" target="_blank" class="bg-white text-vote-primary border-2 border-vote-primary text-lg font-bold py-3 px-8 rounded-full hover:bg-blue-50 transition">
+            <a href="https://boraservices.bora.dopa.go.th/election/enqelection/" target="_blank" class="bg-white text-vote-primary border-2 border-vote-primary text-lg font-bold py-3 px-8 rounded-full hover:bg-blue-50 transition" data-i18n="btn_check">
                 ตรวจสอบสิทธิ
             </a>
         </div>
     </header>
 
     <footer class="bg-gray-100 py-8 text-center text-gray-500 text-sm">
-        <p>© 2026 Vote 69 Project. Created for Educational Purposes.</p>
+        <p data-i18n="footer_text">© 2026 Vote 69 Project. Created for Educational Purposes.</p>
     </footer>
 
 </body>

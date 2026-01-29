@@ -6,22 +6,7 @@
     <title>How to Election 69 - คู่มือเลือกตั้งฉบับเข้าใจง่าย</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <script>
-        tailwind.config = {
-            theme: {
-                fontFamily: {
-                    sans: ['Kanit', 'sans-serif'],
-                },
-                extend: {
-                    colors: {
-                        'vote-primary': '#1e3a8a', // Dark Blue
-                        'vote-accent': '#fbbf24',  // Yellow (Referendum)
-                        'vote-green': '#10b981',   // Green (MPs)
-                    }
-                }
-            }
-        }
-    </script>
+    <script src="script.js"></script>
     <style>
         .card-hover { transition: transform 0.2s; }
         .card-hover:hover { transform: translateY(-5px); }
@@ -32,13 +17,19 @@
     <nav class="bg-white shadow-md sticky top-0 z-50">
         <div class="max-w-4xl mx-auto px-4 py-4 flex justify-between items-center">
             <a href="index.html" class="text-xl font-bold text-vote-primary">Vote 69</a>
-            <a href="index.html" class="text-sm text-gray-500 hover:text-vote-primary">← กลับหน้าหลัก</a>
+            <div class="flex items-center">
+                <a href="index.html" class="text-sm text-gray-500 hover:text-vote-primary" data-i18n="nav_back">← กลับหน้าหลัก</a>
+                <div class="border-l pl-4 ml-4 space-x-2 text-sm">
+                    <button onclick="setLanguage('th')" class="hover:text-vote-primary font-bold">TH</button>
+                    <button onclick="setLanguage('en')" class="hover:text-vote-primary font-bold">EN</button>
+                </div>
+            </div>
         </div>
     </nav>
 
     <header class="bg-vote-primary text-white py-12 px-4 text-center">
         <h1 class="text-3xl md:text-5xl font-bold mb-4">How to Election 69</h1>
-        <p class="text-lg md:text-xl opacity-90">คู่มือเลือกตั้งฉบับรวบรัด สำหรับคนมีเวลาน้อย</p>
+        <p class="text-lg md:text-xl opacity-90" data-i18n="guide_subtitle">คู่มือเลือกตั้งฉบับรวบรัด สำหรับคนมีเวลาน้อย</p>
     </header>
 
     <main class="max-w-4xl mx-auto px-4 py-8 space-y-12">
@@ -46,9 +37,9 @@
         <section id="referendum" class="bg-white rounded-xl shadow-lg p-6 md:p-8 border-l-8 border-vote-accent">
             <h2 class="text-2xl font-bold mb-4 flex items-center">
                 <span class="bg-vote-accent text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 text-sm">1</span>
-                ประชามติ (ใบสีเหลือง)
+                <span data-i18n="ref_title">ประชามติ (ใบสีเหลือง)</span>
             </h2>
-            <p class="text-gray-600 mb-6">คำถามสำคัญ: คุณเห็นชอบหรือไม่ที่จะให้มีการจัดทำรัฐธรรมนูญฉบับใหม่?</p>
+            <p class="text-gray-600 mb-6" data-i18n="ref_question">คำถามสำคัญ: คุณเห็นชอบหรือไม่ที่จะให้มีการจัดทำรัฐธรรมนูญฉบับใหม่?</p>
             
             <div class="grid md:grid-cols-2 gap-6">
                 <div class="bg-yellow-50 p-4 rounded-lg">
@@ -69,7 +60,7 @@
         <section id="election" class="bg-white rounded-xl shadow-lg p-6 md:p-8 border-l-8 border-vote-green">
             <h2 class="text-2xl font-bold mb-4 flex items-center">
                 <span class="bg-vote-green text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 text-sm">2</span>
-                เลือกตั้ง ส.ส. (ใบสีม่วง/เขียว)
+                <span data-i18n="elec_title">เลือกตั้ง ส.ส. (ใบสีม่วง/เขียว)</span>
             </h2>
             <div class="grid md:grid-cols-2 gap-6 mb-8">
                 <div>
@@ -102,7 +93,7 @@
         </section>
 
         <section id="votenolist" class="bg-white rounded-xl shadow-lg p-6 md:p-8">
-            <h2 class="text-2xl font-bold mb-6 text-gray-800">Vote No vs No Vote ต่างกันยังไง?</h2>
+            <h2 class="text-2xl font-bold mb-6 text-gray-800" data-i18n="votenolist_title">Vote No vs No Vote ต่างกันยังไง?</h2>
             <div class="flex flex-col md:flex-row gap-6">
                 <div class="flex-1 border-2 border-gray-200 rounded-xl p-6 text-center hover:border-blue-500 transition">
                     <div class="text-4xl mb-3">🗳️</div>
@@ -121,7 +112,7 @@
         </section>
 
         <section id="vocab">
-            <h2 class="text-2xl font-bold mb-6 text-gray-800">คลังศัพท์การเมือง (Political Vocab)</h2>
+            <h2 class="text-2xl font-bold mb-6 text-gray-800" data-i18n="vocab_title">คลังศัพท์การเมือง (Political Vocab)</h2>
             <div class="grid md:grid-cols-2 gap-4">
                 <details class="bg-white p-4 rounded-lg shadow cursor-pointer group">
                     <summary class="font-bold text-vote-primary flex justify-between items-center">
@@ -158,8 +149,8 @@
         </section>
 
         <footer class="mt-12 mb-8 text-center">
-            <h3 class="text-2xl font-bold mb-4">8 กุมภาพันธ์นี้ อย่าลืมไปใช้สิทธิ!</h3>
-            <a href="https://stat.bora.dopa.go.th/Election/enqelectloc/" target="_blank" class="inline-block bg-vote-primary text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-blue-800 transition transform hover:-translate-y-1">
+            <h3 class="text-2xl font-bold mb-4" data-i18n="footer_reminder">8 กุมภาพันธ์นี้ อย่าลืมไปใช้สิทธิ!</h3>
+            <a href="https://stat.bora.dopa.go.th/Election/enqelectloc/" target="_blank" class="inline-block bg-vote-primary text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-blue-800 transition transform hover:-translate-y-1" data-i18n="footer_btn_check">
                 ตรวจสอบสิทธิเลือกตั้ง
             </a>
         </footer>
