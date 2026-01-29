@@ -41,6 +41,15 @@ const translations = {
         vocab_title: "คลังศัพท์การเมือง (Political Vocab)",
         footer_reminder: "8 กุมภาพันธ์นี้ อย่าลืมไปใช้สิทธิ!",
         footer_btn_check: "ตรวจสอบสิทธิเลือกตั้ง",
+
+
+        vote_no: "โหวตโน",
+        no_vote: "ไม่โหวต",
+        vote_no_cap: "ไปใช้สิทธิ แต่กากบาทช่องไม่ประสงค์เลือก",
+        vote_no_expl: "หากได้คะแนนสูงสุด จะต้องเลือกตั้งใหม่โดยคนเดิมลงไม่ได้",
+        no_vote_cap: "ไม่ไปใช้สิทธิ นอนอยู่บ้าน",
+        no_vote_expl: "เสียงหายไปเลย และถูกตัดสิทธิทางการเมืองหลายอย่าง",
+
         // New Tabs & Content
         tab_big3: "3 พรรคใหญ่",
         tab_const: "รธน. 60",
@@ -73,6 +82,14 @@ const translations = {
         vocab_title: "Political Vocab",
         footer_reminder: "Don't forget to vote on Feb 8th!",
         footer_btn_check: "Check Election Rights",
+
+        vote_no: "Vote No",
+        no_vote: "No Vote",
+        vote_no_cap: "Go vote but cross the 'No Preference' box",
+        vote_no_expl: "If wins, a new election must be held with the incumbent barred from running",
+        no_vote_cap: "Don't vote, stay at home",
+        no_vote_expl: "Your voice is lost and you will be stripped of several political rights",
+
         // New Tabs & Content
         tab_big3: "The Big 3",
         tab_const: "Const. 60",
