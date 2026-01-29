@@ -38,7 +38,7 @@ const translations = {
         ref_question: "คำถามสำคัญ: คุณเห็นชอบหรือไม่ที่จะให้มีการจัดทำรัฐธรรมนูญฉบับใหม่?",
         elec_title: "เลือกตั้ง ส.ส. (ใบสีม่วง/เขียว)",
         votenolist_title: "Vote No vs No Vote ต่างกันยังไง?",
-        vocab_title: "คลังศัพท์การเมือง (Political Vocab)",
+        vocab_title: "คลังศัพท์การเมือง",
         footer_reminder: "8 กุมภาพันธ์นี้ อย่าลืมไปใช้สิทธิ!",
         footer_btn_check: "ตรวจสอบสิทธิเลือกตั้ง",
 
@@ -117,6 +117,8 @@ function setLanguage(lang) {
             } else {
                 element.textContent = translations[lang][key];
             }
+        } else {
+            console.warn(`Missing translation for key: "${key}" in language: "${lang}"`);
         }
     });
 
