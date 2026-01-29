@@ -11,6 +11,7 @@ tailwind.config = {
                 'vote-primary': '#1e3a8a', // Dark Blue
                 'vote-accent': '#fbbf24',  // Yellow (Referendum)
                 'vote-green': '#10b981',   // Green (MPs)
+                'vote-red-flag': '#A51931' // Thai Flag Red
             }
         }
     }
