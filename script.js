@@ -42,6 +42,11 @@ const translations = {
         vocab_title: "คลังศัพท์การเมือง",
         footer_reminder: "8 กุมภาพันธ์นี้ อย่าลืมไปใช้สิทธิ!",
         footer_btn_check: "ตรวจสอบสิทธิเลือกตั้ง",
+        ballot_const_title: "👤 ส.ส. เขต (ใบสีชมพู)",
+        ballot_const_desc: "เลือก \"คน\" ที่จะไปเป็นตัวแทนพื้นที่ของคุณ ใครได้คะแนนสูงสุดในเขตนั้น ชนะไปเลย (Winner Takes All)",
+        ballot_party_title: "🏛️ ส.ส. บัญชีรายชื่อ (ใบสีเขียว)",
+        ballot_party_desc: "เลือก \"พรรค\" ที่ชอบ เอาคะแนนทั้งประเทศมารวมกัน แล้วหารด้วย 100 เพื่อดูว่าพรรคนั้นจะได้ ส.ส. กี่คน",
+        btn_check_candidates: "ดูรายชื่อผู้สมัคร ส.ส. ทั้งหมด 🔍",
 
 
         vote_no: "โหวตโน",
@@ -84,6 +89,11 @@ const translations = {
         vocab_title: "Political Vocab",
         footer_reminder: "Don't forget to vote on Feb 8th!",
         footer_btn_check: "Check Election Rights",
+        ballot_const_title: "👤 Constituency (Pink Ballot)",
+        ballot_const_desc: "Vote for a \"Person\" to represent your area. The candidate with the most votes wins (Winner Takes All).",
+        ballot_party_title: "🏛️ Party-List (Green Ballot)",
+        ballot_party_desc: "Vote for a \"Party\" you like. Total national votes are divided by 100 to calculate MPs per party.",
+        btn_check_candidates: "See All MP Candidates 🔍",
 
         vote_no: "Vote No",
         no_vote: "No Vote",

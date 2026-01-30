@@ -71,17 +71,23 @@
         <section id="election" class="scroll-mt-32 bg-white rounded-xl shadow-lg p-6 md:p-8 border-l-8 border-vote-green">
             <h2 class="text-2xl font-bold mb-4 flex items-center">
                 <span class="bg-vote-green text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 text-sm">2</span>
-                <span data-i18n="elec_title">เลือกตั้ง ส.ส. (ใบสีม่วง/เขียว)</span>
+                <span data-i18n="elec_title">เลือกตั้ง ส.ส. (ใบสีชมพู/เขียว)</span>
             </h2>
             <div class="grid md:grid-cols-2 gap-6 mb-8">
-                <div>
-                    <h3 class="font-bold text-lg mb-2">👤 ส.ส. เขต (Constituency)</h3>
-                    <p class="text-gray-600 text-sm">เลือก "คน" ที่จะไปเป็นตัวแทนพื้นที่ของคุณ ใครได้คะแนนสูงสุดในเขตนั้น ชนะไปเลย (Winner Takes All)</p>
+                <div class="bg-pink-50 border-2 border-pink-200 p-5 rounded-xl">
+                    <h3 class="font-bold text-lg mb-2 text-pink-700" data-i18n="ballot_const_title">👤 ส.ส. เขต (ใบสีชมพู)</h3>
+                    <p class="text-pink-900 text-sm" data-i18n="ballot_const_desc">เลือก "คน" ที่จะไปเป็นตัวแทนพื้นที่ของคุณ ใครได้คะแนนสูงสุดในเขตนั้น ชนะไปเลย (Winner Takes All)</p>
                 </div>
-                <div>
-                    <h3 class="font-bold text-lg mb-2">🏛️ ส.ส. บัญชีรายชื่อ (Party-List)</h3>
-                    <p class="text-gray-600 text-sm">เลือก "พรรค" ที่ชอบ เอาคะแนนทั้งประเทศมารวมกัน แล้วหารด้วย 100 เพื่อดูว่าพรรคนั้นจะได้ ส.ส. กี่คน</p>
+                <div class="bg-green-50 border-2 border-green-200 p-5 rounded-xl">
+                    <h3 class="font-bold text-lg mb-2 text-green-700" data-i18n="ballot_party_title">🏛️ ส.ส. บัญชีรายชื่อ (ใบสีเขียว)</h3>
+                    <p class="text-green-900 text-sm" data-i18n="ballot_party_desc">เลือก "พรรค" ที่ชอบ เอาคะแนนทั้งประเทศมารวมกัน แล้วหารด้วย 100 เพื่อดูว่าพรรคนั้นจะได้ ส.ส. กี่คน</p>
                 </div>
+            </div>
+
+            <div class="text-center mb-8">
+                <a href="https://www.vote62.com/69/candidates/%e0%b8%aa%e0%b8%aa.%e0%b8%9a%e0%b8%b1%e0%b8%8d%e0%b8%8a%e0%b8%b5%e0%b8%a3%e0%b8%b2%e0%b8%a2%e0%b8%8a%e0%b8%b7%e0%b9%88%e0%b8%ad/" target="_blank" class="inline-block bg-white border-2 border-vote-primary text-vote-primary font-bold py-2 px-6 rounded-full hover:bg-blue-50 transition" data-i18n="btn_check_candidates">
+                    ดูรายชื่อผู้สมัคร ส.ส. ทั้งหมด 🔍
+                </a>
             </div>
 
             <div class="bg-gray-100 p-5 rounded-lg">
@@ -121,7 +127,7 @@
                     <p class="font-semibold text-sm text-gray-600 mb-4" data-i18n="vote_no_cap">"ไปใช้สิทธิ แต่กากบาทช่องไม่ประสงค์เลือก"</p>
                     <p class="text-sm text-gray-500" data-i18n="vote_no_expl">หากได้คะแนนสูงสุด จะต้องเลือกตั้งใหม่โดยคนเดิมลงไม่ได้</p>
                 </div>
-                
+
                 <div class="flex-1 border-2 border-gray-200 rounded-xl p-6 text-center hover:border-red-500 transition">
                     <div class="text-4xl mb-3">🛌</div>
                     <h3 class="text-xl font-bold text-red-900 mb-2" data-i18n="no_vote">No Vote (นอนหลับทับสิทธิ์)</h3>
